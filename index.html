@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JS Functions Demo — Strings, Arrays, Math</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 980px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+    h1, h2 { color: #0b5; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.03); }
+    label { display:block; margin-top:0.5rem; font-weight:600; }
+    input[type="text"], input[type="number"], textarea { width:100%; padding:0.5rem; border-radius:4px; border:1px solid #ccc; margin-top:0.25rem; }
+    button { margin-top:0.5rem; padding:0.5rem 0.75rem; border-radius:6px; border:none; background:#0b5; color:white; cursor:pointer; }
+    .result { margin-top:0.5rem; padding:0.5rem; background:#f7f7f7; border-radius:6px; min-height:1.6rem; }
+    small.note { color:#666; display:block; margin-top:0.25rem; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:1rem; }
+  </style>
+</head>
+<body>
+
+  <h1>JS Functions Demo — Strings, Arrays, Math</h1>
+  <p>All logic lives in <code>script.js</code>. Use the controls below to test functions. Results are shown under each control.</p>
+
+  <div class="grid">
+
+    <!-- Reverse string -->
+    <div class="card">
+      <h2>Reverse a String</h2>
+      <label for="rev-input">Text</label>
+      <input id="rev-input" type="text" value="hello world" />
+      <button id="rev-btn">Reverse</button>
+      <div id="rev-res" class="result"></div>
+    </div>
+
+    <!-- Count characters -->
+    <div class="card">
+      <h2>Count Characters</h2>
+      <label for="count-input">Text</label>
+      <input id="count-input" type="text" value="hello world" />
+      <button id="count-btn">Count</button>
+      <div id="count-res" class="result"></div>
+    </div>
+
+    <!-- Capitalize words -->
+    <div class="card">
+      <h2>Capitalize Words</h2>
+      <label for="cap-input">Sentence</label>
+      <input id="cap-input" type="text" value="hello from javascript" />
+      <button id="cap-btn">Capitalize</button>
+      <div id="cap-res" class="result"></div>
+    </div>
+
+    <!-- Array functions -->
+    <div class="card">
+      <h2>Array — Max / Min / Sum / Filter</h2>
+      <label for="arr-input">Numbers (comma separated)</label>
+      <input id="arr-input" type="text" value="10,25,3,8,15" />
+      <button id="arr-run">Compute</button>
+      <div id="arr-res" class="result"></div>
+      <small class="note">Filter example returns even numbers.</small>
+    </div>
+
+    <!-- Factorial & prime -->
+    <div class="card">
+      <h2>Factorial &amp; Prime Check</h2>
+      <label for="fact-input">Number (integer)</label>
+      <input id="fact-input" type="number" value="7" />
+      <button id="fact-run">Run</button>
+      <div id="fact-res" class="result"></div>
+    </div>
+
+    <!-- Fibonacci -->
+    <div class="card">
+      <h2>Fibonacci Sequence</h2>
+      <label for="fib-input">Terms (n)</label>
+      <input id="fib-input" type="number" value="8" />
+      <button id="fib-run">Generate</button>
+      <div id="fib-res" class="result"></div>
+    </div>
+
+  </div>
+
+  <h2>Console Tests</h2>
+  <p class="note">Open your browser console to see the example function calls that run automatically on page load.</p>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
