@@ -1,3 +1,26 @@
+ 
+ # JS Functions Demo
+
+## What
+A small project containing commonly requested JavaScript functions:
+- String: reverse, count characters, capitalize words
+- Array: find max/min, sum, filter
+- Math: factorial, prime check, fibonacci sequence
+
+## Files
+- `index.html` — demo page and UI
+- `script.js` — all functions and UI wiring
+- `README.md` — this file
+
+## How to run
+1. Open `index.html` in a web browser (double-click or use Live Server in VS Code).
+2. Use the inputs and buttons to test each function.
+3. Open the browser console to see example outputs that run on page load.
+
+## Notes
+- All functions are implemented in plain JavaScript (no libraries).
+- The UI is simple for demonstration; you can extend it or extract functions for other projects.
+
   // Run some example tests in console for quick verification
   console.group('Example function outputs');
   console.log('reverseString("hello") =>', reverseString('hello'));
